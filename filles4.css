@@ -1,0 +1,146 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;;
+}
+img{
+    max-width: 100%;
+
+}
+li{
+    transition: .4s;
+}
+li:hover{
+    background-color: rgb(51, 105, 170);
+}
+/*header*/
+.my-header .navbar-brand{
+    font-size: 25px;
+    font-weight: 500;
+}
+.my-header span{
+    background: rgb(49, 154, 224);
+    color:#fff;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+/*slider-section*/
+
+.slider-section{
+    background:url(img/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0 , 0, 0.3);
+    z-index: -1;
+}
+
+
+.slider-caption h2{
+    margin-bottom: 40px;
+    font-size:40px;
+}
+.slider-caption h4{
+     margin-bottom: 20px;
+     
+}
+
+.my-number .h3{
+font-size:50px;
+}
+.about-sec-my .lead{
+   font-size: 25px;
+   line-height: 2rem;
+}
+.profile{
+    background: hsl(30, 20%, 94%);
+}
+
+/*feture section*/
+
+.text-sec-item{
+    width: 60%;
+    padding: 20px;
+}
+.img-sec-item{
+    width: 40%;
+     overflow: hidden;
+     border-radius: 5px 0 0 5px;
+}
+.featuer-item{
+    height: 300px;
+    box-shadow: 4px 5px 30px 1px hsla(0, 0%, 95%, 0.973);
+}
+.img-sec-item img{
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -100px ;
+
+}
+
+/*hover css*/
+
+.protful-item a{
+    position: relative;
+    display: block;
+}
+.protful-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(160, 172, 240, 0.801);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+}
+
+.protful-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.being-section{
+    background-color: #ececeecc;
+}
+
+.pricing-item{
+    background-color:#fff;
+}
+
+.list-edit li{
+    font-size: 25px;
+    padding: 5px 20px;
+    display:block;
+    max-width: 400px;
+    margin-bottom: 5px;
+
+}
+.fas{
+    font-size: 25px;
+    color: rgb(49, 154, 224);
+    margin-right: 5px;
+}
+.con-num{
+    box-shadow: 4px 5px 30px 3px hsla(0, 0%, 95%, 0.973);
+    border-radius: 10px;
+}
